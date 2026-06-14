@@ -77,20 +77,30 @@ that were marked in the baseline:
 | Off-by-one (`i <= size()`) out-of-bounds in "display all" | Range-based loop + empty check |
 | Invalid menu input could loop forever | Stream error handling in the menu loop |
 
-## Reflection — Course Outcomes and What I Learned
+## Reflection — Course Outcomes
 
-Working through this enhancement helped me meet the outcomes related to **using
-well-founded techniques and tools in computing practices (Outcome 4)** and
-building a **security mindset (Outcome 5)**. Designing to an interface, rather than
-to a concrete storage mechanism, was the part that taught me the most: once the
-repository was hidden behind `IStudentRepository`, the rest of the code stopped
-caring about *how* data is stored, which is exactly what will let me drop in a
-database in Module Five without rewriting the program.
+This enhancement supports Outcome 4 (using well-founded techniques and tools in
+computing practice) and Outcome 5 (a security mindset).
 
-The biggest challenge was deciding where each responsibility belonged — for
-example, keeping all validation in the service instead of scattering checks
-across the controller and the model. Drawing the architecture as layers first,
-then moving code into the layer it belonged to, made that decision much clearer.
+Designing the service against the `IStudentRepository` interface, instead of
+against a concrete class, decouples the business logic from the storage
+mechanism. Once the repository sits behind that interface, the rest of the code
+does not depend on how the data is stored. The in-memory repository can then be
+replaced by a database implementation in Module Five without changing the
+service or the controller. This follows the dependency inversion principle and
+the practice of programming to an interface rather than to an implementation.
+
+Responsibility placement is the central design decision in this refactor. All
+validation is kept in the service rather than spread across the controller and
+the model. Some rules require this: rejecting a duplicate ID needs knowledge of
+the whole collection, which only the layer that holds the repository has.
+Defining the layers first and then assigning each piece of code to the layer it
+belongs to keeps the responsibilities separated and the model simple.
+
+The security work maps directly to Outcome 5. Input is validated at the service
+boundary (no negative IDs, no out-of-range GPAs, no duplicates), the menu loop
+recovers from invalid input instead of failing, and value semantics remove the
+manual memory management that leaked in the baseline.
 
 ## How to Build and Run
 
