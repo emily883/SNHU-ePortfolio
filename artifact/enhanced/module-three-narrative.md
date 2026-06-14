@@ -109,3 +109,13 @@ cd artifact/enhanced
 make            # or: g++ -std=c++17 *.cpp -o student_app
 ./student_app
 ```
+
+## Acknowledgment of AI Tool Use
+
+In accordance with SNHU's STEM AI Guidelines for Programming Courses, I
+acknowledge the use of Claude (Anthropic) as a brainstorming, debugging, and
+code-review aid during this enhancement. The tool was used to discuss design
+options, explain C++ concepts, review code I wrote, and help organize this
+narrative. All code, design decisions, and conclusions are my own work. The AI
+tool did not generate the core logic of the implementation, and all content was
+reviewed and verified before submission.
