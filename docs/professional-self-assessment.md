@@ -1,9 +1,7 @@
-<!-- BORRADOR — armado con las respuestas de tu proceso guiado. PERSONALIZA, verifica y quita este aviso + los marcadores [EMILY: ...] antes de entregar. -->
-
 # Professional Self-Assessment
 
 **Emily Cruz Gutierrez** — CS-499 Computer Science Capstone, Southern New Hampshire University
-**[Fecha]**
+**June 21, 2026**
 
 ## Introduction
 
@@ -12,8 +10,6 @@ I am a software developer who became self-taught during the pandemic and has sin
 This ePortfolio centers on a single artifact, a C++ Student Portal, which I enhanced across all three program areas: software design and engineering, algorithms and data structures, and databases. Using one artifact was deliberate — it let each enhancement build on the last and let me show that the same engineering judgment carried through every layer. The sections below introduce the broader skills the program developed in me, with this artifact and my professional work as evidence.
 
 ## Collaborating in a Team Environment
-
-[EMILY: si tienes UN ejemplo real de tu trabajo —aunque sea documentación que otra persona usó— mételo aquí en 1–2 frases.]
 
 I have worked primarily as an independent developer, so my strength in this outcome is *collaboration-readiness*: building work others can join and act on, rather than a history of teams. My layered architecture coordinates contributors through explicit interface contracts — the `IStudentRepository` interface is the only surface two developers must agree on, which lets each work inside a layer without breaking the others. I use a disciplined version-control workflow with a separate branch per stage of work, and I write documentation for a reader who does not share my current context — beginning with my own future self as the first maintainer. If code is clear enough that I can return to it months later and act without rediscovering it, it is clear enough for a teammate to do the same. The code review in this portfolio is itself the collaborative artifact of this competency.
 

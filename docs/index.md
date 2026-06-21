@@ -32,8 +32,6 @@ My code review walks through the original artifact, analyzes it for weaknesses a
 maintainability, and explains the enhancements I planned across the three
 categories. It is the collaborative walkthrough of how the project evolved.
 
-➡️ [Watch the code review]( <!-- EMILY: pega aquí el enlace de YouTube cuando subas el video --> )
-
 ## Enhancement One — Software Design and Engineering
 
 I refactored the monolithic baseline into a layered **Controller / Service /
@@ -62,8 +60,8 @@ hashed passwords — a security-focused capstone to the project.
 ## Contact
 
 - **GitHub:** [github.com/emily883](https://github.com/emily883)
-- **LinkedIn:** <!-- EMILY: pega aquí tu URL de LinkedIn -->
-- **Email:** <!-- EMILY: tu correo profesional de contacto -->
+- **LinkedIn:** [linkedin.com/in/emily-fullstack](https://www.linkedin.com/in/emily-fullstack/)
+- **Email:** [emily.cruzgutierrez@snhu.edu](mailto:emily.cruzgutierrez@snhu.edu)
 
 ---
 
